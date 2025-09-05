@@ -1,0 +1,16 @@
+package lab_01;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		String name = "Roy    hung";
+
+		float pi = 3.1415164755f;
+
+		System.out.println("My name is: " + name);
+
+		System.out.print("Roy hung");
+		System.out.println(" real name Mhung");
+		System.out.printf("Có pi = %.2f", pi);
+
+	}
+}

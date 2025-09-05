@@ -1,0 +1,27 @@
+package lab_01;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+//		String name = "Roy hung";
+
+		float pi = 3.1415164755f;
+
+//		System.out.println("My name is: " + name);
+
+		System.out.print("Roy hung");
+		System.out.println(" real name Mhung");
+
+		Scanner scanner = new Scanner(System.in);
+System.out.print("Nhap vao ten: ");
+		String name = scanner.nextLine();
+		System.out.print("name = " + name);
+		System.out.print("Nhap vao tuoi: ");
+		int age = scanner.nextInt();
+		System.out.print("age = " + age);
+
+		
+
+	}
+}
