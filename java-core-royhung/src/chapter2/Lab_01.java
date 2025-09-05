@@ -1,15 +1,23 @@
 package chapter2;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Lab_01 {
 	public static void main(String[] args) {
-		float score = 4f;
+		Locale.setDefault(Locale.US);
+//		float score = 4f;
 		// > 9 => xuất sắc
 		// 8-9:giỏi
 		// 7-8: khá
 		// < 7: trung bình
 
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("vui long nhap diem: ");
+		float score = scanner.nextFloat();
+
 		if (score >= 9) {
-			System.out.println("Ban dat suat sac");
+			System.out.printf("Ban dat suat sac");
 		} else if (score >= 8 && score < 9) {
 			System.out.println("ban dat gioi");
 		} else if (score >= 7 && score < 8) {
@@ -17,5 +25,6 @@ public class Lab_01 {
 		} else {
 			System.out.println("trung binh");
 		}
+		scanner.close();
 	}
 }
