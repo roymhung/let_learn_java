@@ -1,11 +1,18 @@
 package chapter2;
 
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Lab_02 {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
-		int day = 4;
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nhap vao so tu 1 den 7: ");
+		int day = scanner.nextInt();
+		System.out.println("------------------");
+
 		switch (day) {
 		case 1:
 			System.out.println("Monday");
@@ -18,9 +25,9 @@ public class Lab_02 {
 			break;
 		default:
 			System.out.println("Another day");
+			scanner.close();
 		}
 	}
-	// scanner.close();
 
 	// nhỏ hơn 12
 	// int day = 3;
