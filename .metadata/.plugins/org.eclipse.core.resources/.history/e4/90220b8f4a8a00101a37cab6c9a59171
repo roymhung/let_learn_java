@@ -1,0 +1,39 @@
+package chapter1;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_02 {
+//	Tính toán và in ra console:
+//		- chu vi hình chữ nhật
+//		- diện tích hình chữ nhật
+//		- cạnh nhỏ nhất của hình chữ nhật
+//		Gợi ý:
+//		chu vi = (dài + rộng) x 2
+//		diện tích = dài x rộng
+//		cạnh nhỏ nhất = Math.min(dài, rộng)
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nhap vao chieu dai cua chu nhat: ");
+		float chieuDai = scanner.nextFloat();
+
+		System.out.println("Nhap vao chieu rong cua chu nhat: ");
+		float chieuRong = scanner.nextFloat();
+
+		float chuVi = (chieuDai + chieuRong) * 2;
+		float dientTich = chieuDai * chieuRong;
+
+		float canhMin = Math.min(chieuDai, chieuRong);
+
+		System.out.println("Default JVM Locale: " + Locale.getDefault());
+
+		System.out.println("---------------------");
+		System.out.println("Chu vi = " + chuVi);
+		System.out.printf("Dien tich = %.3f", dientTich);
+//		System.out.println();
+		System.out.println("Canh min = " + canhMin);
+		scanner.close();
+	}
+}

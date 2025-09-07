@@ -1,0 +1,21 @@
+package chapter2;
+
+public class Lab_01 {
+	public static void main(String[] args) {
+		float score = 4f;
+		// > 9 => xuất sắc
+		// 8-9:giỏi
+		// 7-8: khá
+		// < 7: trung bình
+
+		if (score >= 9) {
+			System.out.println("Ban dat suat sac");
+		} else if (score >= 8 && score < 9) {
+			System.out.println("ban dat gioi");
+		} else if (score >= 7 && score < 8) {
+			System.out.println("ban dat kha");
+		} else {
+			System.out.println("trung binh");
+		}
+	}
+}

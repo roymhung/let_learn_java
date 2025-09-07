@@ -1,0 +1,22 @@
+package chapter1;
+
+import java.util.Scanner;
+
+public class Lab_01 {
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Nhap vao diem sinh vien: ");// 9.6 enter
+		float score = scanner.nextFloat();
+
+		scanner.nextLine();// Bo doc dong thua(enter)
+
+		System.out.print("Nhap vao ten sinh vien: ");
+		String name = scanner.nextLine();
+
+		System.out.println("-----------------------------");
+		System.out.println(name + " co diem la: " + score);
+		scanner.close();
+	}
+}

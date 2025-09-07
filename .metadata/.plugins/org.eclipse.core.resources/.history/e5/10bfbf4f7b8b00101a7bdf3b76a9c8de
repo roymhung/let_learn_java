@@ -1,0 +1,21 @@
+package chapter3;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_02 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scanner = new Scanner(System.in);
+
+		int count = 0;
+		int sum = 0;
+
+		for (int i = 0; i < 5; i++) {
+			System.out.println("Nhap 5 so nguyen tu ban phim: ");
+			int number = scanner.nextInt();
+		}
+
+		scanner.close();
+	}
+}

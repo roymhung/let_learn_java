@@ -1,0 +1,26 @@
+package chapter2;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_03 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+
+		Scanner scanner = new Scanner(System.in);
+
+		String password = "royhung";
+
+		String input = "";
+
+		do {
+			System.out.println("Nhap mat khau cua ban: ");
+			input = scanner.nextLine();
+		} while (!password.equals(input));
+
+		System.out.println(" Da nhap dung, ket thuc chuong trinh");
+
+		scanner.close();
+	}
+
+}

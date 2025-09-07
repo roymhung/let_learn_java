@@ -1,0 +1,10 @@
+package chapter3;
+
+public class Lab_01 {
+	public static void main(String[] args) {
+		int[] royHung = {10, 9, 3, 5, 8};
+		System.out.println("Phan tu dau tien = " + royHung[0]);
+		System.out.println("Phan tu dau tien = " + royHung[3]);
+		System.out.println("Phan tu dau tien = " + royHung[14]);
+	}
+}

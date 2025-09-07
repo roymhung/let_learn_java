@@ -1,0 +1,79 @@
+package chapter2;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_05 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+
+		Scanner scanner = new Scanner(System.in);
+		float score = 0;
+		int count = 0;
+		float sum = 0;
+
+		do {
+			System.out.print("nhập điểm từ bàn phím (giá trị 0 đến 10): ");
+			score = scanner.nextFloat();
+
+			if (score == -1)
+				break;
+			if (score < 0 || score > 10) {
+				System.out.println("Gia tri " + score + " khong hop le, vui long nhap lai");
+				continue;
+			}
+			count++;
+			sum += score; // sum = sum + score
+
+		} while (score != -1);
+
+		System.out.println("===== MENU =====");
+		System.out.println("1. Tính điểm trung bình");
+		System.out.println("2. Phân loại học lực");
+		System.out.println("3. Thoát chương trình");
+		System.out.println("================");
+		System.out.println("Nhập lựa chọn: ");
+		
+		float diemTB = (float) sum / count;
+		int choice = scanner.nextInt();
+		
+		switch (choice) {
+		case 1:
+			// do something Tính điểm trung bình
+			System.out.println("Ban da lua chon tinh diem trung binh: ");
+			System.out.println("--------------------");
+			System.out.printf("Diem trung binh = %.2f", diemTB);
+			break;
+		case 2:
+			// do something Phân loại học lực
+			System.out.println("Ban da chon phan loai hoc luc: ");
+			System.out.println("--------------------");
+			
+			if (diemTB >= 9 && diemTB <= 10) {
+			    System.out.println("Bạn xếp loại: Xuất sắc");
+			} else if (diemTB >= 8 && diemTB < 9) {
+			    System.out.println("Bạn xếp loại: Giỏi");
+			} else if (diemTB >= 6.5 && diemTB < 8) {
+			    System.out.println("Bạn xếp loại: Khá");
+			} else if (diemTB >= 5 && diemTB < 6.5) {
+			    System.out.println("Bạn xếp loại: Trung bình");
+			} else if (diemTB < 5) {
+			    System.out.println("Bạn xếp loại: Yếu");
+			} else {
+			    System.out.println("Điểm TB = " + diemTB + " không hợp lệ");
+			}
+			break;
+		case 3:
+			// do something Thoát chương trình
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
+			break;
+		default:
+			System.out.println("");
+			break;
+		}
+		System.out.println("Ket thuc chuong trinh.");
+		scanner.close();
+	}
+}

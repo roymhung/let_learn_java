@@ -1,0 +1,27 @@
+package chapter2;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_05 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+
+		Scanner scanner = new Scanner(System.in);
+
+		int score = 0;
+		do {
+			System.out.print("nhập điểm từ bàn phím (giá trị 0 đến 10) ");
+			score = scanner.nextInt();
+
+			if (score == -1)
+				break;
+			if (score < 0 || score > 10) {
+				System.out.println("Gia tri " + score + " khong hop le, vui long nhap lai");
+				continue;
+			}
+
+		} while (score != -1);
+
+	}
+}

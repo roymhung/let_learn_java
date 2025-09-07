@@ -1,0 +1,13 @@
+package chapter1;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		System.out.print("Nhap ten: ");
+		Scanner scanner = new Scanner(System.in);
+
+		String name = scanner.nextLine();
+
+	}
+}

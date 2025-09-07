@@ -1,0 +1,39 @@
+package chapter2;
+
+public class Lab_04_1 {
+	public static void main(String[] args) {
+//		Yêu cầu 1: Tìm số đầu tiên chia hết cho 7 trong dãy số từ 1 đến 100
+//		Gợi ý: Duyệt từ 1 → 100, in ra số đầu tiên chia hết cho 7 rồi dừng lại (dùng break).
+
+		for (int i = 1; i <= 100; i++) {
+			if (i % 7 == 0) {
+				System.out.println(" i = " + i);
+				break;
+			}
+		}
+
+		int count = 0;
+		for (int i = 1; i <= 100; i++) {
+			if (i % 7 == 0) {
+				count = count + 1;
+				if (count == 3) {
+					System.out.println(" i thu 3 = " + i);
+					break;
+				}
+
+			}
+		}
+		
+		
+//		Yêu cầu 2: In các số từ 1 đến 10, bỏ qua số lẻ (dùng continue)
+//		Gợi ý: Nếu i % 2 != 0 thì continue.
+
+		for(int j = 1; j <= 10; j++) {
+			if(j % 2 == 0) {
+				continue;
+				
+			};
+			System.out.println("j = " + j);
+		}
+	}
+}

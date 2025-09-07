@@ -1,0 +1,31 @@
+package chapter3;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Lab_02 {
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scanner = new Scanner(System.in);
+
+		// Yêu cầu: Viết một chương trình Java thực hiện các bước sau:
+		// Yêu cầu người dùng nhập vào 5 số nguyên từ bàn phím.
+		// Lưu các số này vào một mảng 1 chiều.
+		// Tính tổng của tất cả phần tử trong mảng.
+		// Tìm và in ra số lớn nhất trong mảng.
+
+		int[] listNumber = new int[5];
+
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("Nhap phan tu " + i + ":");
+			int input = scanner.nextInt();
+			listNumber[i - 1] = input;
+		}
+
+		for (int j =0; j < listNumber.length; j++) {
+			System.out.println("phan tu j = " + j);
+		}
+
+		scanner.close();
+	}
+}
