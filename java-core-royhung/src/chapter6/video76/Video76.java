@@ -15,4 +15,14 @@ public class Video76 {
 		test2.wagTail();
 	}
 
+	// Java gọi phương thức dựa trên object thực tế, không dựa vào kiểu khai báo của
+	// biến.
+	//
+	// Animal a1 = new Animal( );
+	// Animal a2 = new Dog( );
+	//
+	// a1.makeSound(); // Animal makes a sound
+	// a2.makeSound(); // Dog barks
+	// Biến a2 là kiểu Animal, nhưng object thực tế là Dog, nên gọi Dog.makeSound().
+
 }
