@@ -17,7 +17,8 @@ public class PartTimeEmployee extends Employee {
 
 	@Override
 	public void printInfo() {
-		System.out.println("Name: " + super.getName() + " / Department " + super.getDepartment() + " / Type: Part-time");
+		System.out
+				.println("Name: " + super.getName() + " / Department " + super.getDepartment() + " / Type: Part-time");
 	}
 
 	public int getHoursWorked() {
