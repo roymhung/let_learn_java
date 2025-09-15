@@ -6,7 +6,7 @@ public class Video109 {
 	public static void main(String[] args) {
 		System.out.println("----------------------");
 
-		ArrayList<String> royhung = new ArrayList();
+		ArrayList<String> royhung = new ArrayList<>();
 		royhung.add("ha noi"); // ["hanoi"]
 		royhung.add("hcm"); // ["hanoi", "hcm"]
 		royhung.add("da nang"); // ["hanoi","hcm", "da nang"]
